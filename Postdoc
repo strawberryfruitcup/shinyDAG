@@ -1,0 +1,14 @@
+\tikzset{
+  every node/.style={ }
+}
+
+
+\begin{tikzpicture}[>=latex]
+\matrix(m)[matrix of nodes, row sep=2.6em, column sep=2.8em,text height=1.5ex, text depth=0.25ex]
+{
+  Maternal Obesity & ~ & ~ & Inflammation & ~ & ~ & ~ & Child Neurodevelopment  \\
+  ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~  \\
+  ~ & ~ & ~ & Maternal Education & ~ & ~ & ~ & ~  \\
+};
+\path[->,font=\scriptsize,>=angle 90](m-3-4) edge [>=stealth, bend left = -15, color = Black,thin,solid] node[auto] {$~$} (m-1-8)(m-1-4) edge [>=stealth, bend left = 0, color = Black,thin,solid] node[auto] {$~$} (m-1-8)(m-3-4) edge [>=stealth, bend left = 0, color = Black,thin,solid] node[auto] {$~$} (m-1-1)(m-1-1) edge [>=stealth, bend left = 0, color = Black,thin,solid] node[auto] {$~$} (m-1-4);
+\end{tikzpicture}
